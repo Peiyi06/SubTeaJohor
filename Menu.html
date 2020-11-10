@@ -3,6 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/extra.css">
+        
         <title>Menu</title>
         <style>
             body{
@@ -13,17 +17,17 @@
                 color: azure;
                 font-size: 400%;
             }
-            h2{
+            #h2{
                 font-family: 'Lucida Handwriting','light';
                 text-align: center;  
                 font-size: 200%;       
             }
             .container{
-                padding: 0 50px;
+                padding: 0 30px;
                 padding-top: 0px;
-                padding-right: 60px;
+                padding-right: 30px;
                 padding-bottom: 0px;
-                padding-left: 60px;
+                padding-left: 30px;
                 margin-right: auto;
                 margin-left: auto;
                 font-family: 'Perpetua' ;
@@ -31,7 +35,7 @@
                 font-size: x-large;
             }
             ul{
-                list-style-image: url('images/icon2.png');
+                list-style-image: url('icon1.png');
              }
             .subtitle{
                 border-top: 2px solid #c9bc9c;
@@ -95,7 +99,7 @@
                 display: table;
                 clear: both;
             }
-            @media screen and (max-width:600px) {
+            @media all and (max-width:600px) {
                 .column {
                     width: 100%;
                 }
@@ -105,29 +109,60 @@
                 -webkit-transform: scale(0.9);
                 -ms-transform: scale(0.9);
                 transform: scale(0.9);
-		    transition-timing-function: ease;
+                transition-timing-function: ease;
             }
             .columnimg{
                 float: left;
-                width: 30%;
-                padding: 30px;
+                width: auto;
+                padding: 5px;
                 
             }
             .columntext{
                 float: left;
-                width: 55%;
-                padding: 25px;
+                width: 60%;
+                margin-left: 8%;
+                margin-bottom: 16%;
+                color:aliceblue;
+            }
+            .columntext2{
+                float: left;
+                width: 60%;
+                margin-left: 30%;
                 margin-bottom: 17%;
                 color:aliceblue;
-                text-align:justify ;
+            }
+            #img_{
+                margin-left: 5%;
             }  
     </style>
     </head>
     <body style="color: rgb(201, 188, 156)">
+        
+        <nav class="fh5co-nav scrolled" role="navigation">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-center logo-wrap">
+						<div id="fh5co-logo"><a href="MainPage.html">SubTea<span>.</span></a></div>
+					</div>
+					<div class="col-xs-12 text-center menu-1 menu-wrap">
+						<ul>
+							<li class="active"><a href="MainPage.html">Home</a></li>
+							<li><a href="Menu.html">Menu</a></li>
+							<li><a href="Member.html">Members Card</a></li>
+							<li><a href="Contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>	
+			</div>
+	    </nav>
+	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image: url(images/hero_1.jpeg);" data-stellar-background-ratio="0.5">
+
+        <div>
+            <br><br><br>
         <h1>The Menu.</h1>
         <br>
         <div>
-            <h2>On - The - Go</h2>
+            <p id="h2">On - The - Go</p>
             <div  class="container">
                 <p class="subtitle">The Classic's : </p>
                 <div class="row">
@@ -137,15 +172,16 @@
                     <div class="columntext">
                         <p style="margin-bottom: 2px; border-bottom-style:dotted; border-width: 3px;color: rgb(201, 188, 156)"><b>Black Sugar Bubble Tea (H/C) --- RM 8.50</b></p><br>
                         <p>The classic bubble tea which mixes black sugar with pure black tea. Our tea is brewed with real tea leaves rather than tea powder to bless our customer's taste buds with the wonderful aroma of Black tea. With black sugar & whipped cream infused in it, Voila! Our delicious Black Sugar Bubble Tea is on your hands!<br><br>
-                        ps. You can choose between cold or hot tapioca pearls as per your liking! :)</p>
+                            ps. You can choose between cold or hot tapioca pearls as per your liking! :)</p><br>
                     </div>
+                    
                     <div class="columnimg">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ_2jsCPlvU2C225G4-w2z6NxBIzoAEP6bixw&usqp=CAU" width="350" height="500" >
                     </div>
                     <div class="columntext">
                         <p style="margin-bottom: 2px; border-bottom-style:dotted; border-width: 3px;color: rgb(201, 188, 156)"><b>Black Sugar Bubble Milk Tea (H/C) --- RM 8.50</b></p><br>
                         <p>It's the same perfect blend of our signature, the Black Sugar Bubble Tea. But this time, we added milk in it for our milk lovers out there! (We see ya fams). The wonderful taste of milk blends perfectly with our Black Tea, and our chewy chewy bobas... bet you wanna have a taste!<br>
-                        <br>ps. You can choose between cold or hot tapioca pearls as per your liking! :)</p>
+                        <br>ps. You can choose between cold or hot tapioca pearls as per your liking! :)</p><br>
                     </div>
                     <div class="columnimg">
                         <img src="https://www.cookerru.com/wp-content/uploads/2019/06/taro-milkshake-feature.jpg" width="350" height="500" >
@@ -178,16 +214,16 @@
                 <p class="subtitle">Our Specials : </p>
                 <div class="row">
                     <div class="columnimg">
-                        <img src="https://www.wheretraveler.com/sites/default/files/feature_ws0220_bubble_tea_feature_bubble_nini_1.jpg" width="400" height="350" >
+                        <img src="https://www.wheretraveler.com/sites/default/files/feature_ws0220_bubble_tea_feature_bubble_nini_1.jpg" width="500" height="450" >
                     </div>
-                    <div class="columntext">
+                    <div class="columntext2">
                         <p style="margin-bottom: 2px; border-bottom-style:dotted; border-width: 3px;color: rgb(201, 188, 156)"><b>Strawberry Milk Tea --- RM11.50</b></p>
                         <p>Milky, fruity, chewy, nice or naughty. Our beautiful Strawberry Milk Tea is not only beautiful on the outside, but on it's taste as well. SubTea made this wonderful beverage by blending fresh strawberries and mixing it with fresh milk. In addition with tri-color jelly as our toppings and freshly sliced strawberries as decorations. This photegenic drink is definitely gonna make your day!</p>
                     </div>
                     <div class="columnimg">
-                        <img src="https://lh3.googleusercontent.com/p/AF1QipMElLOLjjnCZ_sLG-XwBkGpRhcEv_SERcAlJdXY=w600-h0" width="400" height="350" >
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipMElLOLjjnCZ_sLG-XwBkGpRhcEv_SERcAlJdXY=w600-h0" width="500" height="450" >
                     </div>
-                    <div class="columntext">
+                    <div class="columntext2">
                         <p style="margin-bottom: 2px; border-bottom-style:dotted; border-width: 3px;color: rgb(201, 188, 156)"><b>Galaxy Lemon Tea --- RM13.00</b></p>
                         <p> Finally our signature -- Galaxy Lemon Tea is a lemon tea with a beautiful twist. We source our high-quality butterfly pea flower from the northern part of Thailand. 
                             By mixing the blue pea with our fine jasmine green tea and fresh lime juice, this drink gives the taste, the smell and the alluring natural colors just like a beautiful butterfly flying among the stars.</p>
@@ -195,7 +231,7 @@
                 </div>
             </div>
         </div>
-            <h2>Mix & Match</h2>
+            <p id="h2">Mix & Match</p>
             <p align="center">(create your own special bubble tea!)</p>
         <div class="container">
             <p class="subtitle">Base :</p>
@@ -203,32 +239,32 @@
             <div class="row" align="center">
                 <div class="column">
                     <p class="imagefont">Milk</p>
-                    <img src="https://cff2.earth.com/uploads/2019/04/17000926/So-what-exactly-is-in-cow%E2%80%99s-milk--730x410.jpg" width="500" height="325">
+                    <img id="img_" src="https://cff2.earth.com/uploads/2019/04/17000926/So-what-exactly-is-in-cow%E2%80%99s-milk--730x410.jpg" width="450" height="330">
                     <p class="imagefont">(H/C)</p>
                 </div>
                 <div class="column">
                     <p class="imagefont">Almond Milk</p>
-                    <img src="https://ucarecdn.com/63c31e80-f2c2-464c-90c0-81c538de77a6/" width="500" height="325">
+                    <img id="img_" src="https://ucarecdn.com/63c31e80-f2c2-464c-90c0-81c538de77a6/" width="450" height="330">
                     <p class="imagefont">(C)</p>
                 </div>
                 <div class="column">
                     <p class="imagefont">Soy Milk</p>
-                    <img src="https://media.healthyfood.com/wp-content/uploads/2016/09/Soy-milk.jpg" width="500" height="325">
+                    <img id="img_" src="https://media.healthyfood.com/wp-content/uploads/2016/09/Soy-milk.jpg" width="450" height="330">
                     <p class="imagefont">(H/C)</p>
                 </div>
                 <div class="column">
                     <p class="imagefont">Black Tea</p>
-                    <img src="https://img1.thelist.com/img/gallery/when-you-drink-black-tea-every-day-this-is-what-happens-to-your-body/intro-1578590561.jpg" width="500" height="325">
+                    <img id="img_" src="https://img1.thelist.com/img/gallery/when-you-drink-black-tea-every-day-this-is-what-happens-to-your-body/intro-1578590561.jpg" width="450" height="330">
                     <p class="imagefont">(H/C)</p>
                 </div>
                 <div class="column">
                     <p class="imagefont">Earl Grey Tea</p>
-                    <img src="https://www.billi-uk.com/wp-content/uploads/2017/09/earl-grey-leaf-tea-2000874_2.jpg" width="500" height="400">
+                    <img id="img_" src="https://www.billi-uk.com/wp-content/uploads/2017/09/earl-grey-leaf-tea-2000874_2.jpg" width="450" height="350">
                     <p class="imagefont">(H/C)</p>
                 </div>
                 <div class="column">
                     <p class="imagefont">Shaved Ice</p>
-                    <img src="https://d1e3z2jco40k3v.cloudfront.net/-/media/mccormickcan/recipes/tablet/q3_2019_flavor_forecast_blueberry_celery_lemonade_pop_8599_800.jpg" width="500" height="400">
+                    <img id="img_" src="https://d1e3z2jco40k3v.cloudfront.net/-/media/mccormickcan/recipes/tablet/q3_2019_flavor_forecast_blueberry_celery_lemonade_pop_8599_800.jpg" width="450" height="350">
                     <p class="imagefont">(C)</p>
                 </div>
             </div>
@@ -276,32 +312,63 @@
             <div class="row" align="center">
                 <div class="column">
                     <p class="imagefont">Tapioca Pearls</p>
-                    <img src="https://cdn.shopify.com/s/files/1/0189/8074/files/How_to_Store_and_Keep_Tapioca_Pearls_large.jpg?v=1497566601" width="500" height="325">
+                    <img id="img_" src="https://cdn.shopify.com/s/files/1/0189/8074/files/How_to_Store_and_Keep_Tapioca_Pearls_large.jpg?v=1497566601" width="450" height="275">
                 </div>
                 <div class="column">
                     <p class="imagefont">Aloe Vera</p>
-                    <img src="https://www.healthifyme.com/blog/wp-content/uploads/2020/01/aloe-vera-cover-1.jpg" width="500" height="325">
+                    <img id="img_" src="https://www.healthifyme.com/blog/wp-content/uploads/2020/01/aloe-vera-cover-1.jpg" width="450" height="275">
                 </div>
                 <div class="column">
                     <p class="imagefont">Nata De CoCo</p>
-                    <img src="https://awsimages.detik.net.id/community/media/visual/2020/04/16/5ac49145-424f-40db-b027-3c647335d285.jpeg?w=700&q=90" width="500" height="325">
+                    <img id="img_" src="https://awsimages.detik.net.id/community/media/visual/2020/04/16/5ac49145-424f-40db-b027-3c647335d285.jpeg?w=700&q=90" width="450" height="275">
                 </div>
                 <div class="column">
                     <p class="imagefont">Pudding</p>
-                    <img src="https://alittleinsanity.com/wp-content/uploads/2019/04/gluten-free-vegan-chocolate-pudding-recipe.png" width="500" height="325">
+                    <img id="img_" src="https://alittleinsanity.com/wp-content/uploads/2019/04/gluten-free-vegan-chocolate-pudding-recipe.png" width="450" height="275">
                 </div>
                 <div class="column">
                     <p class="imagefont">Grass Jelly</p>
-                    <img src="https://my-test-11.slatic.net/p/mdc/3be02d19f9739fa1cedef5c92eb9f1af.jpg_720x720q80.jpg_.webp" width="500" height="325">
+                    <img id="img_" src="https://my-test-11.slatic.net/p/mdc/3be02d19f9739fa1cedef5c92eb9f1af.jpg_720x720q80.jpg_.webp" width="450" height="275">
                 </div>
                 <div class="column">
                     <p class="imagefont">Ai Yu Jelly</p>
-                    <img src="https://thumbs.dreamstime.com/b/aiyu-jelly-taiwan-famous-dessert-149128610.jpg" width="500" height="325">
+                    <img id="img_" src="https://thumbs.dreamstime.com/b/aiyu-jelly-taiwan-famous-dessert-149128610.jpg" width="450" height="275">
                 </div>
 
             </div>
         </div>
     </div>
+    <footer id="fh5co-footer" role="contentinfo" class="fh5co-section">
+		<div class="container">
+			<div class="row row-pb-md">
+				<div class="col-md-4 fh5co-widget">
+					<h4>SubTea</h4>
+					<p>Johor's first unique milk tea shop, beverages & ingredients of your choice.</p>
+				</div>
+				<div class="col-md-2 col-md-push-1 fh5co-widget">
+					<h4>Links</h4>
+					<ul class="fh5co-footer-links">
+						<li><a href="MainPage.html">Home</a></li>
+						<li><a href="Menu.html">Menu</a></li>
+						<li><a href="Member.html">Members Card</a></li>
+						<li><a href="Contact.html">Contact</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-4 col-md-push-1 fh5co-widget">
+					<h4>Contact Information</h4>
+					<ul class="fh5co-footer-links">
+						<li>11, Jalan Firma 3, Tebrau Industrial Estate 4, <br> 81100 Johor Bahru, Johor,<br> Malaysia</li>
+						<li><a href="#">+60 127843689</a></li>
+						<li><a href="#">SubTea@gmail.com</a></li>
+						<li><a href="MainPage.html">www.SubTea.com</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+	</footer>
 
     </body>
 </html>
