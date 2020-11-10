@@ -43,7 +43,7 @@
   .login-box .user-box input:valid ~ label {
     top: -20px;
     left: 0;
-    color: #9ba736;
+    color: black;
     font-size: 12px;
   }
   
